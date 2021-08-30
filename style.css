@@ -1,0 +1,90 @@
+/* Début du CSS Géneral { */
+body {
+    font-family: 'Raleway-VariableFont_wght.ttf', sans-serif;
+}
+
+header, section {
+    width: 90%;
+    margin : auto;
+}
+
+header {
+
+}
+
+section {
+
+}
+
+footer {
+    
+    margin: 0;
+    padding-bottom: 2%;
+    position: absolute;
+    left: 0;
+    right: 0;
+}
+
+aside {
+
+}
+
+nav {
+    display: flex;
+    width: 100%;
+}
+
+div {
+
+}
+
+p {
+    
+}
+
+a {
+    text-decoration: none;
+}
+
+/*Fin du CSS général } */
+
+
+
+.sec_heb_font, footer {
+    background-color: #F2F2F2;
+}
+
+.div_foot_link {
+    width: 33%;
+    flex-wrap: wrap;
+    padding-left: 3%;
+}
+
+.img_head{
+    width: 6em;
+}
+
+/*Ce code gère le cnt de la section filtre*/
+.div_filtre {
+    width: max-content;
+}
+.div_ctn_filtre {
+    display: flex;
+}
+
+/* Ce code en particulier gère la partie hébergement*/
+.sec_heb {
+    display: flex;
+    justify-content: space-between;
+}
+/* Ce code en particulier gére la position et le comportement des aside de la section hébergement*/
+.asi_heb {
+    border-radius: 15px;
+    padding: 1%;
+}
+.asi_heb_left {
+    width: 60%;
+}
+.asi_heb_right {
+    width: 30%;
+}
