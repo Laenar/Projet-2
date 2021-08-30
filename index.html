@@ -7,27 +7,28 @@
 
     <body>
         <header>
-            <div>
+            <div class="div_hea">
                 <img class="img_head" src="images/logo/Reservia@3x.png"/>
             </div>
-            <div>
-                <a href="#">S'inscrire</a>
-            </div>
-            <nav class="nav_head">
+            <nav class="nav_hea head_blo_right">
                 <a href="#">Hébergements</a>
                 <a href="#">Activités</a>
             </nav>
+            <div class="div_hea head_blo_right">
+                <a href="#">S'inscrire</a>
+            </div>
+            
         </header>
 
-        <section class="sec_filtre">
+        <section class="sec_filtre"> <!-- Cette section affiche les filtre -->
             <div>
                 <h3>Trouvez votre hébergement pour vos vacance de rêve</h3>
                 <p>En plein centre ville ou en pleinne nature</p>
             </div>
             <div>
                 <form>
-                    <input class="inp_search" type="search" value="Marseille, France"/>
-                    <input class="btn_search" type="submit" value="Rechercher"/>
+                    <input class="inp_search" type="search" value="Marseille, France"/><input class="btn_search" type="submit" value="Rechercher"/>
+                    
                 </form>
             </div>
             <aside class="aside_filtre">
@@ -38,56 +39,84 @@
                     <div class="div_filtre"><p>Romantique</p></div>
                     <div class="div_filtre"><p> <i class="fa-solid fa-dog"></i> Animaux autorisés</p></div><br>
                 </div>
-                <p>Plus de 500 logement sont disponible sur cette ville</p>
+                <p>Plus de 500 logement sont disponible sur cette ville<br></p>
             </aside>
         </section>
 
-        <section class="sec_heb">
+        <section class="sec_heb"> <!-- Cette section affiche les hébergement -->
             <aside class="asi_heb sec_heb_font asi_heb_left">
-                <h3>Hébergements à Mardeille</h3>
                 <div>
-
+                    <h3>Hébergements à Mardeille</h3>
                 </div>
             </aside>
 
-            <aside class="asi_heb sec_heb_font asi_heb_right">
-                <h3>Les plus populaires</h3>
+            <aside class="asi_heb sec_heb_font asi_heb_right"> <!--Aside Les plus Populaire-->
                 <div>
+                    <h3>Les plus populaires</h3>
+                </div>
 
+                <div class="div_heb_pop">
+                    <img src="images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" class="img_heb_pop"/>
+                    <div class="heb_pop_desc">
+                        <h4>Hôtel Le soleil du matin</h4>
+                        <p>Nuit à partir de 138€</p>
+                    </div>
+                </div>
+
+                <div class="div_heb_pop">
+                    <img src="images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg" class="img_heb_pop"/>
+                    <div class="heb_pop_desc">
+                        <h4>Hôtel Le soleil du matin</h4>
+                        <p>Nuit à partir de 138€</p>
+                    </div>
+                </div>
+
+                <div class="div_heb_pop">
+                    <img src="images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg" class="img_heb_pop"/>
+                    <div class="heb_pop_desc">
+                        <h4>Hôtel Le soleil du matin</h4>
+                        <p>Nuit à partir de 138€</p>
+                    </div>
                 </div>
             </aside>
         </section>
 
-        <section class="sec_activité">
-            <aside>
+        <section class="sec_activite">
+            <aside class="asi_activite">
                 <div class="div_activite">
-                    <img src="images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg"/>
+                    <div style="background-image: url('images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg');" class="center-cropped"></div>
+                    <!--<img class="img_activite" src="images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg"/>-->
                     <h3>Vieux Port</h3>
                 </div>
             </aside>
-            <aside>
+            <aside class="asi_activite">
                 <div class="div_activite">
-                    <img src="images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg"/>
+                    <div style="background-image: url('images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg');" class="img_activite_size center-cropped"></div>
+                    <!--<img class="img_activite" src="images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg"/>-->
                     <h3>Fort de Pomègues</h3>
                 </div>
                 <div>
-                    <img src="images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg"/>
+                    <div style="background-image: url('images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg');" class="img_activite_size center-cropped"></div>
+                    <!--<img class="img_activite" src="images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg"/>-->
                     <h3>îled du Frioul</h3>
                 </div>
             </aside>
-            <aside>
+            <aside class="asi_activite">
                 <div class="div_activite">
-                    <img src="images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg"/>
+                    <div style="background-image: url('images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg');" class="center-cropped"></div>
+                    <!--<img class="img_activite" src="images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg"/>-->
                     <h3>Parc National des Calanques</h3>
                 </div>
             </aside>
-            <aside>
+            <aside class="asi_activite">
                 <div class="div_activite">
-                    <img src="images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg"/>
+                    <div style="background-image: url('images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg');" class="img_activite_size center-cropped"></div>
+                    <!--<img class="img_activite" src="images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg"/>-->
                     <h3>Notre-Dame-de-la-Garde</h3>
                 </div>
                 <div class="div_activite">
-                    <img src="images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg"/>
+                    <div style="background-image: url('images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg');" class="img_activite_size center-cropped"></div>
+                    <!--<img class="img_activite" src="images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg"/>-->
                     <h3>Parc Longchamp</h3>
                 </div>
             </aside>

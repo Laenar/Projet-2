@@ -9,11 +9,11 @@ header, section {
 }
 
 header {
-
+    display: flex;
 }
 
 section {
-
+    margin-bottom: 20px;
 }
 
 footer {
@@ -44,12 +44,17 @@ p {
 
 a {
     text-decoration: none;
+    color: black;
+}
+
+input {
+    font-size: 1.2em;
+    height: 29px;
 }
 
 /*Fin du CSS général } */
 
-
-
+/* CSS pour gèrer le footer*/
 .sec_heb_font, footer {
     background-color: #F2F2F2;
 }
@@ -60,9 +65,24 @@ a {
     padding-left: 3%;
 }
 
+/*Ce code gère la position des block du header*/
+.div_hea {
+    width: 33%;
+}
+
+.nav_hea {
+    width: 33%;
+}
+
+.head_blo_right {
+    text-align: right;
+    justify-content: flex-end;
+}
+
 .img_head{
     width: 6em;
 }
+
 
 /*Ce code gère le cnt de la section filtre*/
 .div_filtre {
@@ -71,20 +91,79 @@ a {
 .div_ctn_filtre {
     display: flex;
 }
+.btn_search {
+    background-color: #0065FC;
+    border: none;
+    color: white;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
 
 /* Ce code en particulier gère la partie hébergement*/
 .sec_heb {
     display: flex;
     justify-content: space-between;
 }
-/* Ce code en particulier gére la position et le comportement des aside de la section hébergement*/
+    /**/
+.img_heb_pop{
+    width: 100px;
+    height: 100px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+.div_heb_pop {
+    background-color: white;
+    border-radius: 10px;
+}
+.div_heb_pop {
+    display: flex;
+    padding: 1%;
+    margin-bottom: 20px;
+}
+.heb_pop_desc {
+    width: max-content;
+    margin-left: 20px;
+}
+    /* Ce code en particulier gére la position et le comportement des aside de la section hébergement*/
 .asi_heb {
     border-radius: 15px;
     padding: 1%;
 }
 .asi_heb_left {
-    width: 60%;
+    width: 72%;
 }
 .asi_heb_right {
-    width: 30%;
+    width: 22%;
 }
+
+/* Les activités */
+.sec_activite {
+    display: flex;
+    justify-content: space-around;
+    min-height: 500px;
+}
+.div_activite {
+
+}
+.img_activite {
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.asi_activite {
+    width: 20%;
+}
+
+
+
+/*Tentative auto crop*/
+.center-cropped {
+    width: 100%;
+    height: 70%;
+    background-position: center center;
+    background-repeat: no-repeat;
+  }
+
+  .img_activite_size {
+    height: 35%;
+  }
