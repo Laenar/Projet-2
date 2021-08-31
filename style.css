@@ -102,7 +102,7 @@ input {
 /* Ce code en particulier gère la partie hébergement*/
 .sec_heb {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
 }
     /**/
 .img_heb_pop{
@@ -130,17 +130,20 @@ input {
     padding: 1%;
 }
 .asi_heb_left {
-    width: 72%;
+    width: 61%;
 }
 .asi_heb_right {
-    width: 22%;
+    width: 25%;
 }
 
 /* Les activités */
 .sec_activite {
+    min-height: 500px;
+}
+.div_cnt_activ {
     display: flex;
     justify-content: space-around;
-    min-height: 500px;
+    height: 80%;
 }
 .div_activite {
 
@@ -165,5 +168,25 @@ input {
   }
 
   .img_activite_size {
-    height: 35%;
+    height: 25%;
+  }
+
+  .div_heb_cnt {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    text-align: center;
+  }
+
+  .div_heb_result {
+      width: 30%;
+      margin-bottom: 100px;
+  }
+  .div_heb_crop {
+    margin: auto;
+    width: 60%;
+    height: 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-image: url('images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg');
   }
