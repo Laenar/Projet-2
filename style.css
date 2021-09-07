@@ -184,6 +184,12 @@ img {
 .i_gris {
     color: #F2F2F2;
 }
+.i_heb_pop {
+    color: black;
+    float: right;
+    font-size: 1.5em;
+    margin-right: 4%;
+}
 /* Ce code en particulier gére la position et le comportement des aside de la section hébergement*/
 .asi_heb {
     border-radius: 15px;
