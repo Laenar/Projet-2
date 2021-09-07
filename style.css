@@ -214,6 +214,7 @@ h3 {
 .sec_activite {
     min-height: 500px;
 }
+
 .img_activite {
     width: 100%;
     border-top-left-radius: 10px;
@@ -301,5 +302,78 @@ h3 {
         }
     /*}*/
 }
+  .div_heb_result {
+      width: 30%;
+      margin-bottom: 20px;
+      background-color: white;
+      border-radius: 10px;
+      padding-top: 1%;
+  }
+
+  .div_heb_crop {
+    margin: auto;
+    width: 98%;
+    height: 100px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-image: url('images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg');
+    border-radius: 10px;
+  }
+
+  /* ### CSS for mobile ### */
+@media screen and (max-width: 1440px)
+{
+    /* hebergement { */
+    .sec_heb {
+        display: flex;
+        flex-wrap: wrap-reverse;
+    }
+
+    .asi_heb_left {
+        width: 90%;
+    }
+    .asi_heb_right {
+        width: 90%;
+        margin-bottom: 30px;
+    }
+
+    .div_heb_result {
+        width: 80%;
+    }
+    /* } */
+
+    /* Activité { */
+    .div_cnt_activ {
+        flex-wrap: wrap;
+        height: inherit;
+    }
+    .center-cropped, .img_activite_size  {
+        width: 100%;
+        height: 200px;
+        background-position: center center;
+        background-repeat: no-repeat;
+    }
+    /* } */
+
+    /*footer {*/
+        footer {
+            margin-top: 30px;
+        }
+        .div_foot_link, .asi_activite {
+            width: 97%;
+            text-align: center;
+        }
+
+        nav {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        p,a,h3,h4 {
+            font-size: 2em;
+        }
+    /*}*/
+}
+
 
   
