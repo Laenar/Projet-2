@@ -1,5 +1,5 @@
 /* Début du CSS Géneral { */
-body {
+body, input {
     font-family: 'Raleway-VariableFont_wght.ttf', sans-serif;
 }
 header, section {
@@ -8,6 +8,7 @@ header, section {
 }
 header {
     display: flex;
+    padding: 30px;
 }
 section {
     margin-bottom: 20px;
@@ -36,7 +37,7 @@ a {
 }
 input {
     font-size: 1.2em;
-    height: 29px;
+    height: 40px;
 }
 i {
     color: #0065FC;
@@ -55,9 +56,13 @@ img {
     flex-wrap: wrap;
     padding-left: 3%;
 }
+.a_foot {
+    margin-bottom: 10px;
+    font-size: 1.2em;
+}
 /*Ce code gère la position des block du header*/
 .div_hea {
-    width: 33%;
+    width: inherit;
 }
 .nav_hea {
     width: 33%;
@@ -65,9 +70,17 @@ img {
 .head_blo_right {
     text-align: right;
     justify-content: flex-end;
+    width: auto;
 }
 .img_head{
     width: 6em;
+}
+.div_a_inscrire {
+    padding: 3px;
+}
+.a_head {
+    margin-right: 50px;
+    color: #0065FC;
 }
 /*Ce code gère le cnt de la section filtre*/
 .div_filtre {
@@ -105,10 +118,35 @@ img {
     background-color: #DEEBFF;
     font-size: 1.2em;
 }
+.i_map {
+    background-color: #F2F2F2;
+    margin-right: 0px;
+    position: relative;
+    font-size: 2em;
+    margin-right: -4.4;
+    padding: 5px;
+    padding-left: 8px;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    top : 5;
+}
+.p_margin {
+    margin: 50px;
+    margin-left: 0;
+}
+.h_filtre {
+    margin: 10px;
+}
+.i_info_filtre {
+    color: white;
+    border: solid 1px #DEEBFF;
+    border-radius: 10px;
+    background-color: #0065FC;
+}
 /* Ce code en particulier gère la partie hébergement*/
 .sec_heb {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 .img_heb {
     max-height: 150px;
@@ -126,19 +164,18 @@ img {
 }
 /**/
 .img_heb_pop{
-    width: 27%;
+    width: 35.5%;
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
-    max-height: 120px;
-}
-.div_heb_pop {
-    background-color: white;
-    border-radius: 10px;
+    max-height: inherit;
 }
 .div_heb_pop {
     display: flex;
     padding: 1%;
     margin-bottom: 20px;
+    height: 25%;
+    background-color: white;
+    border-radius: 10px;
 }
 .heb_pop_desc {
     width: max-content;
@@ -153,10 +190,10 @@ img {
     padding: 1%;
 }
 .asi_heb_left {
-    width: 61%;
+    width: 65%;
 }
 .asi_heb_right {
-    width: 25%;
+    width: 27%;
 }
 
 /* Les activités */
@@ -209,6 +246,7 @@ img {
 
     .asi_heb_left {
         width: 90%;
+        background-color: white;
     }
     .asi_heb_right {
         width: 90%;
