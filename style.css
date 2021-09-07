@@ -42,11 +42,10 @@ img {
 h3 {
     margin-left: 20px;
 }
-
+/*CSS général pour classe*/
 .div_heb_pop, .div_heb_result, .div_activite {
-    box-shadow: 6px 6px 6px 6px rgba(0,0,0,0.05);
+    box-shadow: 3px 3px 3px 3px rgba(0,0,0,0.05);
 }
-
 .sec_heb, .div_cnt_activ {
     display: flex;
     justify-content: space-between;
@@ -244,7 +243,7 @@ h3 {
     text-align: center;
 }
 /* ### CSS for mobile ### */
-@media screen and (max-width: 1440px)
+@media screen and (max-width: 1359px)
 {
     /* hebergement { */
     .sec_heb {
@@ -263,6 +262,10 @@ h3 {
 
     .div_heb_result {
         width: 80%;
+    }
+    .div_heb_pop {
+        max-width: 96%;
+        margin-left: 1%;
     }
     /* } */
 
