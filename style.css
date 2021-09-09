@@ -7,7 +7,6 @@ header, section {
     margin : auto;
 }
 header {
-    display: flex;
     padding: 30px;
 }
 section {
@@ -21,19 +20,17 @@ footer {
     right: 0;
 }
 nav {
-    display: flex;
     width: 100%;
 }
 a {
     text-decoration: none;
     color: black;
-    padding: 3px;
 }
 input {
     font-size: 1.2em;
     height: 40px;
 }
-i {
+i, .a_head {
     color: #0065FC;
 }
 img {
@@ -47,17 +44,37 @@ h3 {
     box-shadow: 3px 3px 3px 3px rgba(0,0,0,0.05);
 }
 .sec_heb, .div_cnt_activ {
-    display: flex;
     justify-content: space-between;
+}
+.sec_heb_font, .i_map, footer {
+    background-color: #F2F2F2;
+}
+.nav_hea, .div_foot_link {
+    width: 33%;
+}
+.div_a_inscrire, a {
+    padding: 3px;
+}
+.i_filtre, .div_filtre_icone {
+    background-color: #DEEBFF;
+}
+.i_info_filtre, .btn_search  {
+    background-color: #0065FC;
+}
+.i_info_filtre, .btn_search {
+    color: white;
+}
+.img_activite_size, .div_heb_pop {
+    height: 25%;
+}
+.div_ctn_filtre, .div_heb_po, .div_heb_cnt, .sec_heb, .div_cnt_activ, .div_heb_pop, nav, header /*display: flex;*/{
+    display: flex;
 }
 /*Fin du CSS général } */
 
 /* CSS pour gèrer le footer*/
-.sec_heb_font, footer {
-    background-color: #F2F2F2;
-}
+
 .div_foot_link {
-    width: 33%;
     flex-wrap: wrap;
     padding-left: 3%;
 }
@@ -69,9 +86,6 @@ h3 {
 .div_hea {
     width: inherit;
 }
-.nav_hea {
-    width: 33%;
-}
 .head_blo_right {
     text-align: right;
     justify-content: flex-end;
@@ -80,24 +94,16 @@ h3 {
 .img_head{
     width: 6em;
 }
-.div_a_inscrire {
-    padding: 3px;
-}
 .a_head {
     margin-right: 50px;
-    color: #0065FC;
 }
 /*Ce code gère le cnt de la section filtre*/
 .div_filtre {
     margin-right: 10px;
 }
-.div_ctn_filtre {
-    display: flex;
-}
+
 .btn_search {
-    background-color: #0065FC;
     border: none;
-    color: white;
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
 }
@@ -108,7 +114,6 @@ h3 {
     padding-right: 10px;
 }
 .div_filtre_icone {
-    background-color: #DEEBFF;
     padding: 5px;
     border-radius: 30px;
     z-index: 20;
@@ -120,20 +125,18 @@ h3 {
     margin-bottom: -4px;
 }
 .i_filtre {
-    background-color: #DEEBFF;
     font-size: 1.2em;
 }
 .i_map {
-    background-color: #F2F2F2;
     margin-right: 0px;
     position: relative;
     font-size: 2em;
-    margin-right: -4.4;
+    margin-right: -4.4px;
     padding: 5px;
     padding-left: 8px;
     border-top-left-radius: 15px;
     border-bottom-left-radius: 15px;
-    top : 5;
+    top : 5px;
 }
 .p_margin {
     margin: 50px;
@@ -143,10 +146,8 @@ h3 {
     margin: 10px;
 }
 .i_info_filtre {
-    color: white;
     border: solid 1px #DEEBFF;
     border-radius: 10px;
-    background-color: #0065FC;
 }
 /* Ce code en particulier gère la partie hébergement*/
 .img_heb {
@@ -170,10 +171,8 @@ h3 {
     max-height: inherit;
 }
 .div_heb_pop {
-    display: flex;
     padding: 1%;
     margin-bottom: 20px;
-    height: 25%;
     background-color: white;
     border-radius: 10px;
 }
@@ -234,17 +233,18 @@ h3 {
     margin-top: 20px;
 }
 /*Tentative auto crop*/
-.img_activite_size {
-    height: 25%;
-}
+
 .div_heb_cnt {
-    display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
     text-align: center;
 }
+
+.div_cnt_pop {
+    height: 95%;
+}
 /* ### CSS for mobile ### */
-@media screen and (max-width: 1359px)
+@media all and (orientation: portrait) /*Resolution d'écran Verticale*/
 {
     /* hebergement { */
     .sec_heb {
@@ -301,79 +301,81 @@ h3 {
             font-size: 2em;
         }
     /*}*/
-}
-  .div_heb_result {
-      width: 30%;
-      margin-bottom: 20px;
-      background-color: white;
-      border-radius: 10px;
-      padding-top: 1%;
-  }
 
-  .div_heb_crop {
-    margin: auto;
-    width: 98%;
-    height: 100px;
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-image: url('images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg');
-    border-radius: 10px;
-  }
-
-  /* ### CSS for mobile ### */
-@media screen and (max-width: 1440px)
-{
-    /* hebergement { */
-    .sec_heb {
+    header {
         display: flex;
-        flex-wrap: wrap-reverse;
+        padding: 30px;
+        flex-direction: row;
+        justify-content: center;
+        height: 150px;
+        }
+    .nav_hea {
+        align-self: flex-end;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
     }
+    .div_hea {
+        height: 100px;
+        width: auto;
+    }
+    .a_head {
+        margin: 0;
+    }
+}
 
-    .asi_heb_left {
-        width: 90%;
-    }
-    .asi_heb_right {
-        width: 90%;
+@media all /*and (min-width: 1024px)*/ and (max-width: 1358px) {
+    .asi_heb_left, .asi_heb_right {
+        width: 100%;
         margin-bottom: 30px;
     }
-
-    .div_heb_result {
-        width: 80%;
-    }
-    /* } */
-
-    /* Activité { */
-    .div_cnt_activ {
+    .sec_heb {
         flex-wrap: wrap;
-        height: inherit;
     }
-    .center-cropped, .img_activite_size  {
-        width: 100%;
-        height: 200px;
-        background-position: center center;
-        background-repeat: no-repeat;
+    .div_heb_pop {
+        width: 30%;
+        height: 50%;
+        margin-top: 10px;
     }
-    /* } */
-
-    /*footer {*/
-        footer {
-            margin-top: 30px;
-        }
-        .div_foot_link, .asi_activite {
-            width: 97%;
-            text-align: center;
-        }
-
-        nav {
-            display: flex;
-            flex-wrap: wrap;
-        }
-
-        p,a,h3,h4 {
-            font-size: 2em;
-        }
-    /*}*/
+    .div_cnt_pop {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .h_heb_pop {
+        margin: 3px;
+    }
 }
 
+/*
+.nav_hea {
+    align-self: flex-end;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+position: absolute;
+left: 0;
+top: 10%;
+padding-left: 5%;
+width: 45%;
+padding-bottom: 20px;
+border-bottom: 2px solid;
+font-size: 1.5em;
 
+position: absolute;
+right: 0;
+top: 10%;
+padding-right: 5%;
+width: 45%;
+padding-bottom: 20px;
+border-bottom: 2px solid gray;
+color: gray;
+font-size: 1.5em;
+
+.img_head {
+    width: 8em;
+}
+*/
   
