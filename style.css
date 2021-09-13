@@ -283,6 +283,20 @@ h3 {
     .h_heb_pop {
         margin: 3px;
     }
+    .img_heb_pop {
+        max-height: 125px;
+    }
+    .div_cnt_pop {
+        justify-content: space-around;
+    }
+    .div_heb_pop {
+        width: 40%;
+        height: 30%;
+        margin-top: 10px;
+    }
+    .h3_mob_tab {
+        margin-left: 0;
+    }
 }
 /* ### CSS for mobile ### */
 @media all and (orientation: portrait) /*Resolution d'écran Verticale*/
@@ -295,13 +309,18 @@ h3 {
 
     .asi_heb_left {
         width: 90%;
+    }
+
+    .sec_heb_font {
         background-color: white;
     }
     .asi_heb_right {
         width: 90%;
         margin-bottom: 30px;
     }
-
+    .div_heb_result {
+        margin-bottom: 50px;
+    }
     .div_heb_result {
         width: 80%;
     }
@@ -338,7 +357,7 @@ h3 {
             flex-wrap: wrap;
         }
 
-        p,a,h3,h4 {
+        p,a,h3,h4,.a_foot {
             font-size: 1.4em;
         }
     /*}*/
@@ -408,6 +427,25 @@ h3 {
     .a_heb_pop {
         height: auto;
         width: 100%;
+    }
+
+    .img_activite {
+        max-height: 400px;
+    }
+
+    .div_filtre {
+        font-size: 1.6em;
+        margin-bottom: 30px;
+    }
+    
+    .div_activite {
+        margin-bottom: 50px;
+    }
+    .div_ctn_filtre {
+        flex-wrap: wrap;
+    }
+    .p_mob_sty{
+        margin: 0;
     }
 }
 
