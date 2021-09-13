@@ -383,32 +383,28 @@ h3 {
         margin: 0;
     }
 
-    #a_Head_L,#a_Head_D {
-
+    #a_Head_L,#a_Head_R {
+        position: absolute;
+        font-size: 1.5em;
+        width: 45%;
+        padding-bottom: 20px;
     }
     .sec_filtre {
         margin-top: 40px;
     }
     #a_Head_L {
-        position: absolute;
         left: 0;
         top: 10%;
         padding-left: 5%;
-        width: 45%;
-        padding-bottom: 20px;
         border-bottom: 2px solid;
-        font-size: 1.5em;
+        
     }
     #a_Head_R{
-        position: absolute;
         right: 0;
         top: 10%;
         padding-right: 5%;
-        width: 45%;
-        padding-bottom: 20px;
         border-bottom: 2px solid gray;
         color: gray;
-        font-size: 1.5em;
     }
     .nav_hea {
         align-self: flex-end;
