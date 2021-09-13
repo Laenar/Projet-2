@@ -64,10 +64,10 @@ h3 {
 .i_info_filtre, .btn_search {
     color: white;
 }
-.img_activite_size, .div_heb_pop {
+.img_activite_size {
     height: 25%;
 }
-.div_ctn_filtre, .div_heb_po, .div_heb_cnt, .sec_heb, .div_cnt_activ, .div_heb_pop, nav, header /*display: flex;*/{
+.div_ctn_filtre, .div_heb_po, .div_heb_cnt, .sec_heb, .div_cnt_activ, .div_heb_pop, nav, header, .a_heb_pop /*display: flex;*/{
     display: flex;
 }
 /*Fin du CSS général } */
@@ -239,7 +239,6 @@ h3 {
     flex-wrap: wrap;
     text-align: center;
 }
-
 .div_cnt_pop {
     height: 95%;
 }
