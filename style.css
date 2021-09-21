@@ -449,7 +449,7 @@ h3 {
     }
 }
 
-
+/*
 a {
     padding: 0;
 }
@@ -480,38 +480,33 @@ a {
     z-index: 2;
     -webkit-filter: blur(2px);
     filter: blur(2px);
-}
+}*/
 
-:checked.a_Head_L {
-    color: black;
-}
+
 
 /**/
-/*.container {
-  width: 85vw;
-  margin: 1rem auto;
-}
 
-.bg,.overlay {
+.div_stCard_cnt,.div_stCard {
   text-align: center;
 }
 
-img,.overlay {
+img,.div_stCard {
   transition: 0.3s all;
   border-radius: 3px;
 }
 
-.bg {
-  float: left;
-  max-width: 31%;
-  position: relative;
-  margin: 0.5%;
+.div_stCard_cnt {
+    max-width: 96%;
+    position: relative;
+    left: 2%;
+    top: -6%;
 }
-.bg img {
+
+.div_stCard_cnt img {
   width: 100%;
   margin-bottom: -4px;
 }
-.bg .overlay {
+.div_stCard_cnt .div_stCard {
   position: absolute;
   top: 0;
   left: 0;
@@ -521,17 +516,15 @@ img,.overlay {
   color: #fff;
   opacity: 0;
 }
-.bg .overlay h2 {
-  padding-top: 20%;
-  font-family: "Droid Serif", serif;
+.div_stCard_cnt .div_stCard h2 {
+  padding-top: 13%;
 }
-.bg .overlay p {
-  font-family: "Julius Sans One", sans-serif;
-}
-.bg:hover .overlay {
+.div_stCard_cnt:hover .div_stCard {
   opacity: 1;
+  border-top-left-radius: 20px ;
+  border-top-right-radius: 20px ;
 }
-.bg:hover img {
+.div_stCard_cnt:hover img {
   -webkit-filter: blur(2px);
   filter: blur(2px);
-}*/
+}
