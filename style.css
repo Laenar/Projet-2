@@ -224,6 +224,7 @@ h3 {
 }
 .asi_heb_left {
     width: 65%;
+    padding-top: 60px;
 }
 .asi_heb_right {
     width: 27%;
@@ -569,3 +570,11 @@ img,.div_stCard {
     color: grey;
 }
 /*    background-color: blue;*/
+
+.h2_sec_heb {
+    position: absolute;
+    margin-left: 2%;   
+}
+.h3_mob_tab {
+    margin-left: 0;
+}
