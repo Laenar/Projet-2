@@ -29,6 +29,7 @@ a {
 input {
     font-size: 1.2em;
     height: 40px;
+    -webkit-appearance: none;
 }
 i, .a_head {
     color: #0065FC;
@@ -87,18 +88,26 @@ h3 {
     width: inherit;
 }
 .head_blo_right {
+    position: relative;
+    top: -38px;
+    height: 58px;
     text-align: right;
     justify-content: flex-end;
     width: auto;
+    display: flex;
 }
 .img_head{
     width: 6em;
 }
 .a_head {
     margin-right: 50px;
+    align-items: flex-end;
+display: flex;
 }
 
-
+.h2_sec_heb_mob {
+    display: none;
+}
 /*Ce code gère le cnt de la section filtre*/
 .div_filtre {
     margin-right: 10px;
@@ -302,10 +311,26 @@ h3 {
     .div_stCard,.div_stCard {
         height: 125px;
     }
+    .head_blo_right {
+        position: inherit;
+    }
+    
 }
+
+:hover#a_Head_L,:hover#a_Head_R {
+    color: #0065FC;
+    border-top: 3px solid #0065FC ;
+}
+
 /* ### CSS for mobile ### */
 @media all and (orientation: portrait) /*Resolution d'écran Verticale*/
 {
+    .h2_sec_heb {
+        display: none;
+    }
+    .h2_sec_heb_mob {
+        display: initial;
+    }
     .div_nav_barre_elem  {
         display: none;
     }
@@ -387,7 +412,7 @@ h3 {
         justify-content: space-between;
     }
     .div_hea {
-        height: 100px;
+        height: fit-content;
         width: auto;
     }
     .a_head {
@@ -457,42 +482,13 @@ h3 {
     .div_stCard,.div_stCard {
         height: auto;
     }
-}
 
-/*
-a {
-    padding: 0;
+    :hover#a_Head_L,:hover#a_Head_R {
+        color: #0065FC;
+        border-color: #0065FC;
+        border-top: 0px solid ;
+    }
 }
-.div_stCard_cnt {
-    position: relative;
-}
-.div_stCard {
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 0;
-    height: 150px;
-    display: flex;
-    align-items: center;
-    text-align: center;
-    justify-content: center;
-}
-.txt_stCard {
-    margin: 0;
-    color: white;
-    z-index: 4;
-}
-.img_heb {
-    position: relative;
-    z-index: 6;
-}
-:hover.img_heb{
-    z-index: 2;
-    -webkit-filter: blur(2px);
-    filter: blur(2px);
-}*/
-
-
 
 /**/
 
@@ -563,11 +559,15 @@ img,.div_stCard {
 .img_heb_pop {
     height: 100%;
 }
-.a_Head_LC {
-    background-color: #0065FC;
-}
-#a_Head_R {
+
+#a_Head_R,#a_Head_L {
     color: grey;
+    align-items: end;
+    display: flex;
+    width: 49%;
+margin: 0;
+min-width: 135px;
+justify-content: center;
 }
 /*    background-color: blue;*/
 
