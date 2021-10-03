@@ -29,7 +29,7 @@ a {
 input {
     font-size: 1.2em;
     height: 40px;
-    -webkit-appearance: none;
+    /*-webkit-appearance: none;*/  /*Paramètr a utiliser por le navigateur safari a adapté*/
 }
 i, .a_head {
     color: #0065FC;
@@ -140,15 +140,15 @@ display: flex;
     font-size: 1.2em;
 }
 .i_map {
-    margin-right: 0px;
     position: relative;
-    font-size: 2em;
+    font-size: 1.5em;
     margin-right: -4.4px;
-    padding: 5px;
+    padding: 0.35em;
     padding-left: 8px;
     border-top-left-radius: 15px;
     border-bottom-left-radius: 15px;
-    top : 5px;
+    top: 2px;
+    color: black;
 }
 .p_margin {
     margin: 50px;
