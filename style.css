@@ -325,6 +325,9 @@ display: flex;
 /* ### CSS for mobile ### */
 @media all and (orientation: portrait) /*Resolution d'écran Verticale*/
 {
+    .div_stCard_cnt .div_stCard h2 {
+        padding-top: 5%;
+      }
     .h2_sec_heb {
         display: none;
     }
