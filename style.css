@@ -77,7 +77,11 @@ h3 {
 
 .div_foot_link {
     flex-wrap: wrap;
-    padding-left: 3%;
+}
+
+.nav_foot {
+    width: 90%;
+    margin: auto;
 }
 .a_foot {
     margin-bottom: 10px;
@@ -661,7 +665,7 @@ display: flex;
 
 
 
-@media all /*and (min-width: 1024px)  /*Code pour rsolusion d'écran à faible largeur*/ and (max-width: 319px) {
+@media all /*and (min-width: 1024px)  /*Code pour rsolusion d'écran à trés faible largeur*/ and (max-width: 319px) {
     .inp_search {
         width: 70%;
     }
