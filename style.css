@@ -508,7 +508,7 @@ display: flex;
         }
 
         p,a,h3,h4,.a_foot {
-            font-size: 1.2em;
+            font-size: 1.5em;
         }
     /*}*/
 
@@ -517,6 +517,8 @@ display: flex;
         padding: 30px;
         flex-direction: row;
         justify-content: center;
+        min-height: 200px;
+        max-width: 100%;
         }
     .nav_hea {
         align-self: flex-end;
@@ -612,6 +614,7 @@ display: flex;
 
     .asi_heb_right {
         width: 100%;
+        max-width: -moz-available;
         padding-bottom: 40px;
         border-radius: 0;
     }
@@ -647,7 +650,7 @@ display: flex;
 
 @media all /*and (min-width: 1024px)  /*Code pour rsolusion d'écran à faible largeur*/ and (max-width: 450px) {
     p,a,h3,h4,.a_foot {
-        font-size: 1em;
+        font-size: 1.2em;
     }
 
     .sec_filtre {
@@ -660,6 +663,10 @@ display: flex;
 
     #a_Head_R,#a_Head_L {
         top : 14%;
+    }
+
+    header {
+        min-height: 150px;
     }
 }
 
@@ -678,7 +685,27 @@ display: flex;
         font-size: 0.7em;
     }
 
+    p,a,h3,h4,.a_foot {
+        font-size: 1em;
+    }
+
     .sec_filtre {
         margin-top: 20%;
+    }
+    header {
+        min-height: 50px;
+    }
+
+    #a_Head_L, #a_Head_R {
+        font-size: 1.2em;
+    }
+
+    .img_head {
+        width: 6em;
+        margin-top: 20px;
+    }
+
+    .heb_pop_desc {
+        margin-left: 8px;
     }
 }
