@@ -166,6 +166,9 @@ display: flex;
     border-radius: 10px;
 }
 
+.p_margin {
+    font-family: 'Raleway-Italic-VariableFont_wght.ttf', sans-serif;
+}
 /*.div_filtre_icone:hover {
     background-color: #0065FC;
 }*/
@@ -351,7 +354,7 @@ display: flex;
   }
   
   #a_Head_R,#a_Head_L {
-      color: grey;
+      color: #0065FC;
       align-items: end;
       display: flex;
       width: 49%;
