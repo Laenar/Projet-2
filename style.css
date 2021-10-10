@@ -354,7 +354,9 @@ display: flex;
   }
 
   #a_Head_L {
-    color: #0065FC;}
+    color: #0065FC;
+    border-top: 3px solid #0065FC ;
+    }
 
     #a_Head_R {
         color: grey;}
