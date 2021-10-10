@@ -352,9 +352,14 @@ display: flex;
   .img_heb_pop {
       height: 100%;
   }
+
+  #a_Head_L {
+    color: #0065FC;}
+
+    #a_Head_R {
+        color: grey;}
   
   #a_Head_R,#a_Head_L {
-      color: #0065FC;
       align-items: end;
       display: flex;
       width: 49%;
